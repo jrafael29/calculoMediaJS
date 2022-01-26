@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cadastro de alunos</title>
+</head>
+<body>
+    <div class="content">
+        <div class="formulario">
+            <form class="cadastro" name="cadastrar">
+                <input class="campoNome" type="text" name="nome" id="" value="" placeholder="Nome do aluno" required autocomplete="off">
+                <input class="campoNotaUm" type="number" name="notaUm" value="" placeholder="Primeira nota" required>
+                <input class="CampoNotaDois" type="number" name="notaDois" value="" placeholder="Segunda nota" required>
+                <input class="enviar" type="button" value="Enviar" onclick="cadastrarAluno(nome.value, notaUm.value, notaDois.value)">
+            </form>
+        </div>
+        <div class="campos">
+            <div class="aprovados-area">
+                <h2 class="green">Aprovados</h2>
+                <div class="aprovados"></div>
+            </div>
+            <div class="reprovados-area">
+                <h2 class="red">Reprovados</h2>
+                <div class="reprovados"></div>
+            </div>  
+        </div>
+        <input class="limpar" type="button" value="Limpar campos" onclick="limpar()">
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

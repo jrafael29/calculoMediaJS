@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: radial-gradient(rgba(164, 196, 255, 0.637), rgba(119, 255, 175, 0.445));
+}
+@media (max-width: 768px){
+    .content{
+        margin-top: 50px !important;
+    }
+}
+@media(max-width: 550px){
+    .content{
+        margin-top: 20px !important;
+        margin-bottom: 30px !important;
+    }
+    .campos{
+        flex-direction: column;
+    }
+}
+.content{
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 1px 1px 15px #999;
+    /* background-color: #fff; */
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 200px;
+}
+
+.cadastro input,
+.cadastro button{
+    width: 100%;
+    padding: 5px;
+    background: transparent;
+    border: 1px solid #999;
+    border-radius: 5px;
+    text-align: center;
+}
+.campos{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.campos h2{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.aprovados,
+.reprovados{
+    height: 150px;
+    background-color: transparent;
+    overflow-y: scroll;
+    padding: 10px;
+    box-shadow: inset 0px 0px 10px #888;
+    font-size: 14px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.aprovados-area,
+.reprovados-area{
+    display: none;
+}
+.mostrar{
+    display: flex;
+}
+
+.limpar,
+.enviar{
+    padding: 5px;
+    width: 200px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
